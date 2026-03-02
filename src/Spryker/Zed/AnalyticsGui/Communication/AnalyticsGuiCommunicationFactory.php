@@ -13,9 +13,6 @@ use Spryker\Zed\Kernel\Communication\AbstractCommunicationFactory;
 
 class AnalyticsGuiCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Zed\AnalyticsGui\Dependency\Facade\AnalyticsGuiToUserFacadeInterface
-     */
     public function getUserFacade(): AnalyticsGuiToUserFacadeInterface
     {
         return $this->getProvidedDependency(AnalyticsGuiDependencyProvider::FACADE_USER);

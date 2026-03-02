@@ -26,9 +26,6 @@ class AnalyticsController extends AbstractController
         ]);
     }
 
-    /**
-     * @return \Generated\Shared\Transfer\AnalyticsCollectionTransfer
-     */
     protected function getAnalyticsCollection(): AnalyticsCollectionTransfer
     {
         $userTransfer = $this->getFactory()->getUserFacade()->getCurrentUser();
@@ -40,12 +37,6 @@ class AnalyticsController extends AbstractController
         );
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\AnalyticsRequestTransfer $analyticsRequestTransfer
-     * @param \Generated\Shared\Transfer\AnalyticsCollectionTransfer $analyticsCollectionTransfer
-     *
-     * @return \Generated\Shared\Transfer\AnalyticsCollectionTransfer
-     */
     protected function executeAnalyticsCollectionExpanderPlugins(
         AnalyticsRequestTransfer $analyticsRequestTransfer,
         AnalyticsCollectionTransfer $analyticsCollectionTransfer

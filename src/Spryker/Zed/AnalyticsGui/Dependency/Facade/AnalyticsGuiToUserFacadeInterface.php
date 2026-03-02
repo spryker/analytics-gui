@@ -11,8 +11,5 @@ use Generated\Shared\Transfer\UserTransfer;
 
 interface AnalyticsGuiToUserFacadeInterface
 {
-    /**
-     * @return \Generated\Shared\Transfer\UserTransfer
-     */
     public function getCurrentUser(): UserTransfer;
 }
